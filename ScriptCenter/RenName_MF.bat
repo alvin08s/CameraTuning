@@ -3,7 +3,7 @@
 :: # Author         : Alvin
 :: # mail           : shiyunfengchn@126.com
 :: # Created Time   : Thu 20 Feb 2019 09:46:02 AM CST
-:: # Version        : Ver2.1
+:: # Version        : Ver2.2
 :: #########################################################################
 
 @echo off
@@ -56,7 +56,7 @@ if defined fileName (
         call ren %%i !fileName!_!var!.%imageFormat%
         set /a var += 1
     )
-    echo "文件重命名成功，该程序将在3秒后退出"
+    echo 文件重命名成功，该程序将在3秒后退出
 ) else (
     echo "Nothing to do"
 )
@@ -65,7 +65,7 @@ timeout /t 3
 @exit
 
 :end
-echo "选择有误，程序将在3秒后退出"
+echo 选择有误，程序将在3秒后退出
 timeout /t 3
 @exit
 
